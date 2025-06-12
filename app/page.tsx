@@ -32,7 +32,7 @@ export default function Home() {
     <>
       <div className="flex z-[-1]">
         <Image
-          src="/images/flower.png"
+          src="./images/flower.png"
           alt="Coming soon"
           width={600}
           height={400}
@@ -40,7 +40,7 @@ export default function Home() {
           style={{ transform: `rotate(${scrollY / 6}deg)` }}
         />
         <Image
-          src="/images/flower.png"
+          src="./images/flower.png"
           alt="Coming soon"
           width={600}
           height={400}
@@ -63,7 +63,7 @@ export default function Home() {
         >
           <div className="lg:w-[50%] lg:my-auto mx-auto z-[-1]">
             <Image
-              src="/images/placeholder.svg"
+              src="./images/placeholder.svg"
               alt="Coming soon"
               width={600}
               height={400}

@@ -20,14 +20,14 @@ export default function Footer() {
           <div className="lg:flex lg:flex-grid lg:gap-5 lg:space-y-0 space-y-5">
             <Image
               className="lg:w-30 w-20"
-              src={`/images/insta-logo.webp`}
+              src={`./images/insta-logo.webp`}
               alt="Instagram Logo"
               width={100}
               height={100}
             />{" "}
             <Image
               className="lg:w-30 w-20"
-              src={`/images/linkedin-logo.webp`}
+              src={`./images/linkedin-logo.webp`}
               alt="LinkedIn Logo"
               width={100}
               height={100}

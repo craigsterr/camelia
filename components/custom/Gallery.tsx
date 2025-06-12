@@ -9,48 +9,48 @@ export default function Gallery() {
       title: "Spyfall Unlimited (WIP)",
       description:
         "A clone of the social deduction game Spyfall using Next.js and Supabase for realtime lobby handling.",
-      image: "/images/spyfall.png",
+      image: "./images/spyfall.png",
       link: "https://github.com/craigsterr/spyfall",
     },
     {
       title: "News Template Presets",
       description:
         "A preset Firefox extension to automate article items when I worked as a news reporter.",
-      image: "/images/news.png",
+      image: "./images/news.png",
       link: "https://addons.mozilla.org/en-US/firefox/addon/news-template-presets/",
     },
     {
       title: "Productivity Slime",
       description:
         "A preset Firefox extension to track time spent on unproductive tabs in the style of a video game slime.",
-      image: "/images/slime.png",
+      image: "./images/slime.png",
       link: "https://craigsterr.github.io/kitty-clicker",
     },
     {
       title: "Webbie Pet",
       description:
         "A tamagotchi style game created with JavaScript, HTML5 Canvas, SASS, Next.js, and Node.js.",
-      image: "/images/webbie.png",
+      image: "./images/webbie.png",
       link: "https://craigsterr.github.io/webbie-pet",
     },
     {
       title: "Portfolio Website",
       description:
         "My personal portfolio website with all of my information including my resume, LinkedIn and Github",
-      image: "/images/portfolio.png",
+      image: "./images/portfolio.png",
       link: "https://craigo.live",
     },
     {
       title: "Kitty Clicker",
       description:
         "A clicker game made entirely in React, HTML, and Javascript.",
-      image: "/images/kitty.png",
+      image: "./images/kitty.png",
       link: "https://craigsterr.github.io/kitty-clicker",
     },
     {
       title: "camellia",
       description: "What are the odds!!!!!!!!!!!",
-      image: "/images/camellia.png",
+      image: "./images/camellia.png",
       link: "https://craigsterr.github.io/camellia",
     },
   ];

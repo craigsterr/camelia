@@ -1,18 +1,12 @@
 import type { NextConfig } from "next";
+const isProd = process.env.NODE_ENV === "production";
+const repoName = "camellia";
 
 const nextConfig: NextConfig = {
-  basePath: "/camellia",
-  assetPrefix: "/camellia/",
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "placehold.co",
-      },
-    ],
-    dangerouslyAllowSVG: true,
-  },
-  distDir: "dist",
+  output: "export",
+  images: { unoptimized: true },
+  basePath: isProd ? `/${repoName}` : "",
+  assetPrefix: isProd ? `/${repoName}/` : "",
 };
 
 export default nextConfig;
