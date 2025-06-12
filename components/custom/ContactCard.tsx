@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -16,7 +15,7 @@ export function ContactCard() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle>Let's get in touch! </CardTitle>
+        <CardTitle>Let&apos;s get in touch! </CardTitle>
         <CardDescription>
           WARNING: THIS CONTACT FORM DOES NOT WORK. EMAIL US AT
           craig.brdt505@gmail.com

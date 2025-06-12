@@ -7,7 +7,7 @@ import "./globals.css";
 import Accordion from "@/components/custom/Accordion";
 import Footer from "@/components/custom/Footer";
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 export default function Home() {
   const sectionStyle =
@@ -16,17 +16,17 @@ export default function Home() {
   const rightSectionStyle = "transition-transform duration-200 " + sectionStyle;
   const h3Style = "";
   const whoAreWeStyle = "lg:ml-[-5vw] text-center lg:text-left";
-  const [scrollY, setScrollY] = useState(0);
+  // const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-    function onScroll() {
-      setScrollY(window.scrollY);
-      console.log(window.scrollY);
-    }
+  // useEffect(() => {
+  //   function onScroll() {
+  //     setScrollY(window.scrollY);
+  //     console.log(window.scrollY);
+  //   }
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  //   window.addEventListener("scroll", onScroll);
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
   return (
     <>
