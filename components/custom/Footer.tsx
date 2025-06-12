@@ -8,7 +8,7 @@ export default function Footer() {
           <h2>Let&apos;s talk</h2>
           <div>
             <h3>Email:</h3>
-            <p>camelliaemail@gmail.com</p>
+            <p>craig.brdt505@gmail.com</p>
           </div>
           <div>
             <h3>Phone:</h3>

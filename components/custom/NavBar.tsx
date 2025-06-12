@@ -54,13 +54,13 @@ export default function NavBar() {
             >
               portfolio
             </Link>
-            <Link
+            {/* <Link
               href="/contact"
               className={linkStyle}
               onClick={() => setIsOpen(false)}
             >
               contact
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>

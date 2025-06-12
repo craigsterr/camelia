@@ -8,17 +8,17 @@ export default function Portfolio() {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col w-[80%] lg:w-[70%] mx-auto text-center lg:text-left space-y-30">
+      <div className="flex flex-col w-[80%] lg:w-[70%] mx-auto text-center lg:text-left space-y-10 lg:space-y-30">
         <div />
         <div className="mx-auto space-y-20 animate__animated animate__bounceInUp">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col space-y-5 lg:space-y-10 lg:flex-row justify-between items-center">
             <h1 className="">Our Work</h1>
-            <div className="text-3xl flex justify-end gap-5">
+            <div className="text-xl lg:text-3xl flex justify-end gap-5">
               <button className={buttonStyle}>Craig</button>
-              <button className={buttonStyle}>Leah</button>
+              {/* <button className={buttonStyle}>Leah</button> */}
             </div>
           </div>
-          <p className="">
+          <p>
             Our background in art influences how we approach every project —
             with attention to detail, balance, and visual clarity. That creative
             foundation helps us design and build websites that are not only
@@ -27,7 +27,7 @@ export default function Portfolio() {
             seamlessly.
           </p>
         </div>
-        <div id="gallery">
+        <div id="gallery" className="">
           <Gallery />
         </div>
       </div>

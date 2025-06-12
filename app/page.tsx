@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <div className="flex z-[-1]">
-        <Image
+        {/* <Image
           src="./images/flower.png"
           alt="Coming soon"
           width={600}
@@ -46,7 +46,7 @@ export default function Home() {
           height={400}
           className={"fixed right-0 opacity-10"}
           style={{ transform: `rotate(${scrollY / 6 + 100}deg)` }}
-        />
+        /> */}
       </div>
       <NavBar />
       <main className="space-y-30 max-w-[80%] flex flex-col mx-auto lg:space-y-50 lg:max-w-[60%]">

@@ -61,8 +61,7 @@ export default function Gallery() {
           <div
             key={i}
             className={
-              "bg-gray-300 flex justify-center text-lg rounded-2xl " +
-              sectionStyle
+              "bg-black flex justify-center text-lg rounded-2xl " + sectionStyle
             }
           >
             <a href={craigPortfolio[i].link}>
@@ -72,24 +71,26 @@ export default function Gallery() {
                     src={craigPortfolio[i].image}
                     alt={craigPortfolio[i].title}
                     fill
-                    className="object-cover opacity-30 rounded-2xl"
+                    className="object-cover opacity-60 rounded-2xl blur-sm"
                     sizes="320px"
                   />
                 </div>
                 <div className="p-5 flex flex-row gap-4">
-                  <div className="space-y-5 p-2">
-                    <h2 className="text-4xl drop-shadow-2xl">
+                  <div className="space-y-5 p-2 ">
+                    <h2 className="text-4xl drop-shadow-2xl text-white">
                       {craigPortfolio[i] ? craigPortfolio[i].title : "Project"}
                     </h2>
-                    <p className="text-xl ">{craigPortfolio[i].description}</p>
+                    <p className="text-xl text-white/80">
+                      {craigPortfolio[i].description}
+                    </p>
                   </div>
-                  <Image
+                  {/* <Image
                     src={craigPortfolio[i].image}
                     alt={craigPortfolio[i].title}
                     className="invisible lg:visible object-contain rounded-2xl w-[100%]"
                     width={300}
                     height={300}
-                  />
+                  /> */}
                 </div>
               </span>
             </a>
