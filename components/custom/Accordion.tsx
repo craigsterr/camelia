@@ -22,8 +22,8 @@ export default function AccordionDemo() {
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
             We build responsive, performance-optimized websites tailored to your
-            brand and business goals. Whether it’s a sleek landing page or a
-            dynamic web app, we ensure your site is fast, accessible, and
+            brand and business goals. Whether it&apos;s a sleek landing page or
+            a dynamic web app, we ensure your site is fast, accessible, and
             user-friendly.
           </p>
           <p>
@@ -39,7 +39,7 @@ export default function AccordionDemo() {
         <AccordionContent className="flex flex-col gap-4 text-balance">
           <p>
             We offer honest, constructive feedback on your current website —
-            from UI/UX design to performance and SEO. You'll receive clear,
+            from UI/UX design to performance and SEO. You&apos;ll receive clear,
             actionable advice on how to elevate your online presence.
           </p>
         </AccordionContent>
