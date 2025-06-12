@@ -52,7 +52,7 @@
 
 @font-face {
   font-family: "Neue Haas Grotesk Display";
-  src: url("/fonts/NeueHaasDisplayThin.ttf") format("truetype");
+  src: url("./fonts/NeueHaasDisplayThin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -60,7 +60,7 @@
 
 @font-face {
   font-family: "Neue Haas Grotesk Display";
-  src: url("/fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+  src: url("./fonts/NeueHaasDisplayMediu.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
