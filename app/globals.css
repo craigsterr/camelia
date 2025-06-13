@@ -49,7 +49,7 @@
     --foreground: #ededed;
   }
 }
-
+/* /camellia-v2 */
 @font-face {
   font-family: "Neue Haas Grotesk Display";
   src: url("/camellia-v2/fonts/NeueHaasDisplayThin.ttf");
@@ -64,6 +64,10 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {

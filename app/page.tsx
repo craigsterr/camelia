@@ -6,6 +6,7 @@ import "animate.css";
 import "./globals.css";
 import Accordion from "@/components/custom/Accordion";
 import Footer from "@/components/custom/Footer";
+import SmoothScroll from "@/components/custom/SmoothScroll";
 
 // import { useEffect, useState } from "react";
 
@@ -30,6 +31,7 @@ export default function Home() {
 
   return (
     <>
+      <SmoothScroll />
       <div className="flex z-[-1]">
         {/* <Image
           src="./images/flower.png"
@@ -74,21 +76,24 @@ export default function Home() {
             <h2 className={whoAreWeStyle}>
               <b>Who are we?</b>
             </h2>
-            <p className="text-center">
-              We&apos;re a <strong>two-person</strong> web development team with
-              a mission: to build fast, elegant, and user-focused websites and
-              applications. From <strong>startups</strong> to{" "}
-              <strong>established brands</strong>, we help ideas come to life
-              through clean code, beautiful design, and thoughtful
-              collaboration.
+            <p className="text-center lg:text-left">
+              We&apos;re a <strong>Craig</strong> and <strong>Leah</strong>. A
+              two-person web development team with extensive art and technology
+              backgrounds and a passion for <strong>sleek</strong>,{" "}
+              <strong>modern design </strong>. Our websites are not only
+              <strong> stylish</strong>, but <strong>personalized</strong> to
+              whatever your heart desires. Whether you&apos;re an established
+              business or growing startup, we&apos;re here along the way to{" "}
+              <strong>help you grow</strong>.
             </p>
           </div>
         </section>
         <section id="our-mission" className={leftSectionStyle}>
           <h3 className={h3Style}>
-            Our mission is to create meaningful
-            <strong> digital experiences</strong> that <strong>resonate</strong>{" "}
-            with users and foster long-term relationships.
+            All the bells and whistles at a <strong>fraction</strong> of the{" "}
+            <strong>price</strong> and <strong>10x</strong> times the speed of{" "}
+            <strong>big agencies</strong> and <strong> typical startups</strong>
+            .
           </h3>
         </section>
         <section id="collapsable" className={sectionStyle + " space-y-10"}>

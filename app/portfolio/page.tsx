@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col w-[80%] lg:w-[70%] mx-auto text-center lg:text-left space-y-10 lg:space-y-30">
+      <div className="flex flex-col w-[80%] lg:w-[50%] mx-auto text-center lg:text-left space-y-10 lg:space-y-30">
         <div />
         <div className="mx-auto space-y-20 animate__animated animate__bounceInUp">
           <div className="flex flex-col space-y-5 lg:space-y-10 lg:flex-row justify-between items-center">
@@ -19,12 +19,21 @@ export default function Portfolio() {
             </div>
           </div>
           <p>
-            Our background in art influences how we approach every project —
-            with attention to detail, balance, and visual clarity. That creative
-            foundation helps us design and build websites that are not only
-            functional but visually thoughtful. We aim to bring a sense of craft
-            to the digital space, where form and function work together
-            seamlessly.
+            I&apos;m <strong>Craig</strong> a web development specialist with a{" "}
+            <strong>Computer Science</strong> degree from the{" "}
+            <strong>University of Illinois</strong>, consistently ranked among
+            the <strong>top five computer science programs</strong> in the{" "}
+            <strong>nation</strong>! I&apos;m also a{" "}
+            <strong>freelance artist</strong> with a background in 3D modelling,
+            digital art, and animation with a passion for vibrant designs that{" "}
+            <strong>POP</strong>.
+            <br />
+            <br />
+            When it comes to jobs, I work <strong>hard</strong> and I work{" "}
+            <strong>quick</strong>.
+            <br />
+            <br />
+            <strong>Check out some of my work!</strong>
           </p>
         </div>
         <div id="gallery" className="">
