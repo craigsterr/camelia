@@ -53,7 +53,7 @@ export default function Home() {
         <div />
         <section id="opening-statement" className={leftSectionStyle}>
           <h3 className={h3Style}>
-            Welcome to <strong>camellia</strong>. Let's get you{" "}
+            Welcome to <strong>camellia</strong>. Let&apos;s get you{" "}
             <strong>growing</strong>.
           </h3>
         </section>

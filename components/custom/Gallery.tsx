@@ -6,11 +6,11 @@ export default function Gallery() {
 
   const craigPortfolio = [
     {
-      title: "Spyfall Unlimited (WIP)",
+      title: "Spyfall Unlimited",
       description:
         "A clone of the social deduction game Spyfall using Next.js and Supabase for realtime lobby handling.",
       image: "./images/spyfall.png",
-      link: "https://github.com/craigsterr/spyfall",
+      link: "https://spyfall.craigo.live",
     },
     {
       title: "News Template Presets",
@@ -24,7 +24,7 @@ export default function Gallery() {
       description:
         "A preset Firefox extension to track time spent on unproductive tabs in the style of a video game slime.",
       image: "./images/slime.png",
-      link: "https://craigsterr.github.io/kitty-clicker",
+      link: "https://addons.mozilla.org/en-US/firefox/addon/productivity-slime/",
     },
     {
       title: "Webbie Pet",
@@ -51,7 +51,7 @@ export default function Gallery() {
       title: "camellia",
       description: "What are the odds!!!!!!!!!!!",
       image: "./images/camellia.png",
-      link: "https://craigsterr.github.io/camellia",
+      link: "https://craigsterr.github.io/camellia-v2",
     },
   ];
   return (
