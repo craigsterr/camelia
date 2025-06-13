@@ -53,8 +53,8 @@ export default function Home() {
         <div />
         <section id="opening-statement" className={leftSectionStyle}>
           <h3 className={h3Style}>
-            Opening statement that will <strong>attract users</strong> and
-            establish <strong>brand personality</strong>.
+            Welcome to <strong>camellia</strong>. Let's get you{" "}
+            <strong>growing</strong>.
           </h3>
         </section>
         <section
