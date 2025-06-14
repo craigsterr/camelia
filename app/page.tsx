@@ -12,7 +12,7 @@ import SmoothScroll from "@/components/custom/SmoothScroll";
 
 export default function Home() {
   const sectionStyle =
-    "hover:scale-105 transition-transform animate__animated animate__bounceInUp";
+    " transition-transform animate__animated animate__bounceInUp";
   const leftSectionStyle = "max-w-[75%]  " + sectionStyle;
   const rightSectionStyle = "transition-transform duration-200 " + sectionStyle;
   const h3Style = "";
@@ -53,15 +53,18 @@ export default function Home() {
       <NavBar />
       <main className="space-y-30 max-w-[80%] flex flex-col mx-auto lg:space-y-50 lg:max-w-[60%]">
         <div />
-        <section id="opening-statement" className={leftSectionStyle}>
+        <section
+          id="opening-statement"
+          className={"hover:scale-105 " + leftSectionStyle}
+        >
           <h3 className={h3Style}>
-            Welcome to <strong>camellia</strong>. Let&apos;s get you{" "}
+            Welcome to <strong>camelia</strong>. Let&apos;s get you{" "}
             <strong>growing</strong>.
           </h3>
         </section>
         <section
           id="who-are-we"
-          className={`${rightSectionStyle} space-y-10 lg:flex lg:flex-grid lg:gap-10 lg:ml-[-10vw] lg:mr-[-10vw]`}
+          className={`${rightSectionStyle} space-y-10 lg:flex lg:flex-grid lg:gap-10 lg:ml-[-15vw] lg:mr-[-15vw]`}
         >
           <div className="lg:w-[50%] lg:my-auto mx-auto z-[-1]">
             <Image
@@ -69,7 +72,7 @@ export default function Home() {
               alt="Coming soon"
               width={600}
               height={400}
-              className="w-full h-auto object-contain rounded-lg animate__animated animate__rubberBand hover:scale-105 transition-transform duration-400"
+              className="w-full h-auto object-contain rounded-lg animate__animated animate__rubberBand transition-transform duration-400"
             />
           </div>
           <div className="flex-1 lg:my-auto space-y-5">
@@ -80,7 +83,7 @@ export default function Home() {
               We&apos;re a <strong>Craig</strong> and <strong>Leah</strong>. A
               two-person web development team with extensive art and technology
               backgrounds and a passion for <strong>sleek</strong>,{" "}
-              <strong>modern design </strong>. Our websites are not only
+              <strong>modern design</strong>. Our websites are not only
               <strong> stylish</strong>, but <strong>personalized</strong> to
               whatever your heart desires. Whether you&apos;re an established
               business or growing startup, we&apos;re here along the way to{" "}

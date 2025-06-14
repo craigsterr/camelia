@@ -22,7 +22,7 @@ export default function NavBar() {
             href="/"
             className="text-2xl lg:text-4xl font-bold text-gray-800 animate__animated animate__heartBeat"
           >
-            camellia
+            camelia
           </Link>
 
           {/* Menu toggle button - visible on small screens */}
