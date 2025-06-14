@@ -8,7 +8,7 @@ import Accordion from "@/components/custom/Accordion";
 import Footer from "@/components/custom/Footer";
 import SmoothScroll from "@/components/custom/SmoothScroll";
 
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const sectionStyle =
@@ -17,41 +17,48 @@ export default function Home() {
   const rightSectionStyle = "transition-transform duration-200 " + sectionStyle;
   const h3Style = "";
   const whoAreWeStyle = "lg:ml-[-5vw] text-center lg:text-left";
-  // const [scrollY, setScrollY] = useState(0);
+  const [rotation, setRotation] = useState(0);
 
-  // useEffect(() => {
-  //   function onScroll() {
-  //     setScrollY(window.scrollY);
-  //     console.log(window.scrollY);
-  //   }
+  useEffect(() => {
+    let start: number | null = null;
+    const duration = 1500; // in ms
+    const initialRotation = 0;
+    const targetRotation = 360;
 
-  //   window.addEventListener("scroll", onScroll);
-  //   return () => window.removeEventListener("scroll", onScroll);
-  // }, []);
+    function easeInOut(t: number): number {
+      return -(Math.cos(Math.PI * t) - 1) / 2;
+    }
+
+    function animate(time: number) {
+      if (start === null) start = time;
+      const elapsed = time - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = easeInOut(progress);
+      setRotation(initialRotation + (targetRotation - initialRotation) * eased);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }, []);
 
   return (
     <>
       <SmoothScroll />
       <div className="flex z-[-1]">
-        {/* <Image
-          src="./images/flower.png"
-          alt="Coming soon"
-          width={600}
-          height={400}
-          className={"fixed bottom-0 opacity-10"}
-          style={{ transform: `rotate(${scrollY / 6}deg)` }}
-        />
         <Image
           src="./images/flower.png"
           alt="Coming soon"
-          width={600}
+          width={400}
           height={400}
           className={"fixed right-0 opacity-10"}
-          style={{ transform: `rotate(${scrollY / 6 + 100}deg)` }}
-        /> */}
+          style={{ transform: `rotate(${rotation}deg)` }}
+        />
       </div>
       <NavBar />
-      <main className="space-y-30 max-w-[80%] flex flex-col mx-auto lg:space-y-50 lg:max-w-[60%]">
+      <main className="space-y-30 max-w-[80%] flex flex-col mx-auto lg:space-y-50 lg:max-w-[70%]">
         <div />
         <section
           id="opening-statement"
@@ -64,7 +71,7 @@ export default function Home() {
         </section>
         <section
           id="who-are-we"
-          className={`${rightSectionStyle} space-y-10 lg:flex lg:flex-grid lg:gap-10 lg:ml-[-15vw] lg:mr-[-15vw]`}
+          className={`${rightSectionStyle} space-y-10 lg:flex lg:flex-grid lg:gap-10 lg:ml-[-10vw] lg:mr-[-10vw]`}
         >
           <div className="lg:w-[50%] lg:my-auto mx-auto z-[-1]">
             <Image
