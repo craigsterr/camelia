@@ -57,7 +57,10 @@ export default function Home() {
           style={{ transform: `rotate(${rotation}deg)` }}
         />
       </div>
-      <NavBar />
+      <div className=" animate__animated animate__bounceInDown">
+        <NavBar />
+      </div>
+
       <main className="space-y-30 max-w-[80%] flex flex-col mx-auto lg:space-y-50 lg:max-w-[70%]">
         <div />
         <section

@@ -4,41 +4,57 @@ import NavBar from "@/components/custom/NavBar";
 import Gallery from "@/components/custom/Gallery";
 import Footer from "@/components/custom/Footer";
 import SmoothScroll from "@/components/custom/SmoothScroll";
+import { useState } from "react";
 
 export default function Portfolio() {
   const buttonStyle =
-    "bg-gray-300 rounded-xl py-2 px-4 transition-transform duration-300 hover:scale-115";
+    " rounded-xl py-2 px-4 transition-all duration-300 hover:scale-115 hover:bg-gray-400 cursor-pointer";
+  const [buttonToggle, setButtonToggle] = useState(false);
+
   return (
     <>
       <SmoothScroll />
       <NavBar />
       <div className="flex flex-col w-[80%] lg:w-[70%] mx-auto text-center lg:text-left space-y-10 lg:space-y-30">
         <div />
-        <div className="mx-auto space-y-20 animate__animated animate__bounceInUp">
+        <div className="mx-auto space-y-0 w-full">
           <div className="flex flex-col space-y-5 lg:space-y-10 lg:flex-row justify-between items-center">
             <h1 className="">Our Work</h1>
-            <div className="text-xl lg:text-3xl flex justify-end gap-5">
-              <button className={buttonStyle}>Craig</button>
-              <button className={buttonStyle}>Leah</button>
+            <div className="text-xl lg:text-3xl flex justify-end gap-5 mb-4">
+              <button
+                onClick={() => setButtonToggle(false)}
+                className={`${buttonStyle} ${
+                  !buttonToggle ? "bg-black text-white" : " bg-gray-300"
+                }`}
+              >
+                Craig
+              </button>
+              <button
+                onClick={() => setButtonToggle(true)}
+                className={`${buttonStyle} ${
+                  buttonToggle ? "bg-black text-white" : " bg-gray-300"
+                }`}
+              >
+                Leah
+              </button>
             </div>
           </div>
-          <p>
-            I&apos;m <strong>Craig</strong> a web development specialist with a{" "}
-            <strong>Computer Science</strong> degree from the{" "}
-            <strong>University of Illinois</strong>, consistently ranked among
-            the <strong>top five computer science programs</strong> in the{" "}
-            <strong>nation</strong>! I&apos;m also a{" "}
-            <strong>freelance artist</strong> with a background in 3D modelling,
-            digital art, and animation with a passion for vibrant designs that{" "}
-            <strong>POP</strong>.
-            <br />
-            <br />
-            When it comes to jobs, I work <strong>hard</strong> and I work{" "}
-            <strong>quick</strong>.
-          </p>
+          {buttonToggle ? (
+            <p>Leah&apos;s portfolio. </p>
+          ) : (
+            <p>
+              I&apos;m Craig, a web development specialist with a Computer
+              Science degree from the University of Illinois, consistently
+              ranked among the top five computer science programs in the nation!
+              I&apos;m also a freelance artist with a background in 3D
+              modelling, digital art, and animation with a passion for vibrant
+              designs that pop. When it comes to jobs, I work hard and I work
+              quick.{" "}
+            </p>
+          )}
         </div>
         <div id="gallery" className="">
-          <Gallery />
+          <Gallery toggle={buttonToggle} />
         </div>
       </div>
       <div className="mt-50">
