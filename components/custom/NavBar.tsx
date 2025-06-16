@@ -16,13 +16,13 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="p-6 border-b-2 bg-gray-300/25 border-gray-300 animate__animated animate__bounceInDown">
+      <nav className="p-6 border-b-2 bg-gray-100 border-gray-300 animate__animated animate__bounceInDown">
         <div className="flex justify-between max-w-7xl mx-auto ">
           <Link
             href="/"
-            className="text-2xl lg:text-4xl font-bold text-gray-800 animate__animated animate__heartBeat"
+            className="text-2xl lg:text-4xl text-gray-800 animate__animated animate__heartBeat"
           >
-            camellia
+            camelia
           </Link>
 
           {/* Menu toggle button - visible on small screens */}

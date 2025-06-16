@@ -87,7 +87,7 @@ html {
   h4,
   a,
   p {
-    @apply text-xl sm:text-lg md:text-3xl tracking-wide;
+    @apply text-xl sm:text-lg md:text-2xl tracking-wide;
   }
 }
 :root {
