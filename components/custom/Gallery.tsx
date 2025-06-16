@@ -7,31 +7,34 @@ export default function Gallery() {
   const craigPortfolio = [
     {
       title: "Spyfall Unlimited",
-      description:
-        "A clone of the social deduction game Spyfall using Next.js and Supabase for realtime lobby handling.",
+      description: "A clone of the social deduction game Spyfall.",
       image: "./images/spyfall.png",
       link: "https://spyfall.craigo.live",
     },
     {
       title: "News Template Presets",
-      description:
-        "A preset Firefox extension to automate article items when I worked as a news reporter.",
+      description: "A preset Firefox extension to automate article items.",
       image: "./images/news.png",
       link: "https://addons.mozilla.org/en-US/firefox/addon/news-template-presets/",
     },
     {
       title: "Productivity Slime",
       description:
-        "A preset Firefox extension to track time spent on unproductive tabs in the style of a video game slime.",
+        "A gamified preset Firefox extension to track time spent on unproductive tabs.",
       image: "./images/slime.png",
       link: "https://addons.mozilla.org/en-US/firefox/addon/productivity-slime/",
     },
     {
       title: "Webbie Pet",
-      description:
-        "A tamagotchi style game created with JavaScript, HTML5 Canvas, SASS, Next.js, and Node.js.",
+      description: "A tamagotchi style game with custom illustrations.",
       image: "./images/webbie.png",
       link: "https://craigsterr.github.io/webbie-pet",
+    },
+    {
+      title: "Kitty Clicker",
+      description: "Clicker game entirely made in React, HTML and Javascript.",
+      image: "./images/kitty.png",
+      link: "https://craigsterr.github.io/kitty-clicker",
     },
     {
       title: "Portfolio Website",
@@ -40,63 +43,33 @@ export default function Gallery() {
       image: "./images/portfolio.png",
       link: "https://craigo.live",
     },
-    {
-      title: "Kitty Clicker",
-      description:
-        "A clicker game made entirely in React, HTML, and Javascript.",
-      image: "./images/kitty.png",
-      link: "https://craigsterr.github.io/kitty-clicker",
-    },
-    {
-      title: "camellia",
-      description: "What are the odds!!!!!!!!!!!",
-      image: "./images/camellia.png",
-      link: "https://craigsterr.github.io/camellia-v2",
-    },
   ];
   return (
-    <>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
-        {[...Array(craigPortfolio.length)].map((_, i) => (
-          <div
-            key={i}
-            className={
-              "bg-black flex justify-center text-lg rounded-2xl " + sectionStyle
-            }
-          >
-            <a href={craigPortfolio[i].link}>
-              <span>
-                <div className="absolute inset-0 z-[-1]">
-                  <Image
-                    src={craigPortfolio[i].image}
-                    alt={craigPortfolio[i].title}
-                    fill
-                    className="object-cover opacity-60 rounded-2xl blur-sm"
-                    sizes="320px"
-                  />
-                </div>
-                <div className="p-5 flex flex-row gap-4">
-                  <div className="space-y-5 p-2 ">
-                    <h2 className="text-4xl drop-shadow-2xl text-white">
-                      {craigPortfolio[i] ? craigPortfolio[i].title : "Project"}
-                    </h2>
-                    <p className="text-xl text-white/80">
-                      {craigPortfolio[i].description}
-                    </p>
-                  </div>
-                  {/* <Image
-                    src={craigPortfolio[i].image}
-                    alt={craigPortfolio[i].title}
-                    className="invisible lg:visible object-contain rounded-2xl w-[100%]"
-                    width={300}
-                    height={300}
-                  /> */}
-                </div>
-              </span>
-            </a>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
+      {craigPortfolio.map((project, i) => (
+        <a
+          key={i}
+          href={project.link}
+          className="relative flex flex-row bg-white rounded-xl shadow-lg overflow-hidden group hover:scale-[1.02] transition-transform"
+        >
+          {/* Left Side - Text Content */}
+          <div className="w-3/5 p-6 flex flex-col justify-center h-[300px]">
+            <p className="text-xl text-gray-900 mb-40">{project.title}</p>
+            <p className="text-gray-500 text-sm">{project.description}</p>
           </div>
-        ))}
-      </div>
-    </>
+
+          {/* Right Side - Image Blur Background */}
+          <div className="relative w-2/5 h-48 md:h-auto">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover blur-xs"
+              sizes="320px"
+            />
+          </div>
+        </a>
+      ))}
+    </div>
   );
 }

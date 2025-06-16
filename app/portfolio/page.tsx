@@ -31,9 +31,6 @@ export default function Portfolio() {
             <br />
             When it comes to jobs, I work <strong>hard</strong> and I work{" "}
             <strong>quick</strong>.
-            <br />
-            <br />
-            <strong>Check out some of my work!</strong>
           </p>
         </div>
         <div id="gallery" className="">
