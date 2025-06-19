@@ -63,13 +63,13 @@ const leahPortfolio = [
     description:
       "A mobile navigational interface that allows users to fulfill their campus academic and social life.",
     image: "./images/campusnav.png",
-    link: "https://www.jayleelambino.com/not-too-late",
+    link: "https://www.figma.com/proto/igbeLG49eZ9P8X8mptvNWa/Map?node-id=117-212&p=f&t=ePFzeb2tPk9BySD8-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=117%3A212&show-proto-sidebar=1",
   },
   {
     title: "NotTooLate",
     description: "A self-service kiosk aimed to reduce surplus food waste.",
     image: "./images/toolate.png",
-    link: "https://www.figma.com/proto/igbeLG49eZ9P8X8mptvNWa/Map?node-id=117-212&p=f&t=ePFzeb2tPk9BySD8-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=117%3A212&show-proto-sidebar=1",
+    link: "https://www.jayleelambino.com/not-too-late",
   },
 ];
 

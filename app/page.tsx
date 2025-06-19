@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const sectionStyle =
-    " transition-transform animate__animated animate__bounceInUp";
+    " transition-transform animate__animated animate__fadeInUp";
   const leftSectionStyle = "max-w-[75%]  " + sectionStyle;
   const rightSectionStyle = "transition-transform duration-200 " + sectionStyle;
   const h3Style = "";
@@ -57,7 +57,7 @@ export default function Home() {
           style={{ transform: `rotate(${rotation}deg)` }}
         />
       </div>
-      <div className=" animate__animated animate__bounceInDown">
+      <div className=" animate__animated animate__fadeInDown">
         <NavBar />
       </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
               alt="Coming soon"
               width={600}
               height={400}
-              className="w-full h-auto object-contain rounded-lg animate__animated animate__rubberBand transition-transform duration-400"
+              className="w-full h-auto object-contain rounded-lg"
             />
           </div>
           <div className="flex-1 lg:my-auto space-y-5">
