@@ -11,7 +11,7 @@ export default function NavBar() {
   const linkStyle = ` text-xl lg:text-4xl font-medium px-2 py-1 rounded ${
     pathname === "/contact"
       ? "bg-gray-300 text-black"
-      : "text-gray-800 bg-gray-300/0 hover:bg-gray-300 hover:text-black"
+      : "text-gray-800 bg-gray-300/0 hover:bg-gray-300 transition-all duration-300 hover:text-black"
   }`;
 
   return (

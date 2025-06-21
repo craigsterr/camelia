@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function Portfolio() {
   const buttonStyle =
-    " rounded-xl py-2 px-4 transition-all duration-300 hover:scale-115 hover:bg-gray-400 cursor-pointer";
+    " rounded py-2 px-4 transition-all duration-300 cursor-pointer";
   const [buttonToggle, setButtonToggle] = useState(false);
 
   return (
@@ -24,7 +24,9 @@ export default function Portfolio() {
               <button
                 onClick={() => setButtonToggle(false)}
                 className={`${buttonStyle} ${
-                  !buttonToggle ? "bg-black text-white" : " bg-gray-300"
+                  !buttonToggle
+                    ? "bg-black text-white"
+                    : " bg-gray-200 hover:bg-gray-300"
                 }`}
               >
                 Craig
@@ -32,7 +34,9 @@ export default function Portfolio() {
               <button
                 onClick={() => setButtonToggle(true)}
                 className={`${buttonStyle} ${
-                  buttonToggle ? "bg-black text-white" : " bg-gray-300"
+                  buttonToggle
+                    ? "bg-black text-white"
+                    : " bg-gray-200 hover:bg-gray-300"
                 }`}
               >
                 Leah
@@ -40,12 +44,19 @@ export default function Portfolio() {
             </div>
           </div>
           {buttonToggle ? (
-            <p>Leah&apos;s portfolio. </p>
+            <p>
+              I&apos;m Leah, a solution oriented UX/UI designer and college
+              student. A determined minimalist plagued with a maximalist mind
+              that swears by organization, thorough communication and an open
+              mind to be the recipe for leading the creation of beautiful,
+              human-centered designs. On the side I pursue other mediums of art
+              like graphic, fashion and illustrative design.{" "}
+            </p>
           ) : (
             <p>
               I&apos;m Craig, a web development specialist with a Computer
               Science degree from the University of Illinois, consistently
-              ranked among the top five computer science programs in the nation!
+              ranked among the top five computer science programs in the nation.
               I&apos;m also a freelance artist with a background in 3D
               modelling, digital art, and animation with a passion for vibrant
               designs that pop. When it comes to jobs, I work hard and I work
