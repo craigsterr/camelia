@@ -19,7 +19,7 @@ export default function AccordionDemo() {
         <AccordionTrigger className={animation}>
           Web Design and Development
         </AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-4 text-balance">
+        <AccordionContent className="flex flex-col gap-4">
           <p>
             We build responsive, performance-optimized websites tailored to your
             brand and business goals. Whether it&apos;s a sleek landing page or
@@ -36,9 +36,9 @@ export default function AccordionDemo() {
         <AccordionTrigger className={animation}>
           Site Critiques
         </AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-4 text-balance">
+        <AccordionContent className="flex flex-col gap-4">
           <p>
-            We offer honest, constructive feedback on your current website —
+            We offer honest, constructive feedback on your current website -
             from UI/UX design to performance and SEO. You&apos;ll receive clear,
             actionable advice on how to elevate your online presence.
           </p>
@@ -48,7 +48,7 @@ export default function AccordionDemo() {
         <AccordionTrigger className={animation}>
           Design Consulting
         </AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-4 text-balance">
+        <AccordionContent className="flex flex-col gap-4">
           <p>
             Get expert guidance on visual design, branding, layout systems, and
             usability. We work with your existing team or independently to align
@@ -60,11 +60,11 @@ export default function AccordionDemo() {
         <AccordionTrigger className={animation}>
           Brand Expansion
         </AccordionTrigger>
-        <AccordionContent className="flex flex-col gap-4 text-balance">
+        <AccordionContent className="flex flex-col gap-4">
           <p>
             We help growing businesses scale their digital brand with cohesive
             design systems, scalable web platforms, and strategic design
-            thinking — ensuring every interaction feels consistent and
+            thinking - ensuring every interaction feels consistent and
             intentional.
           </p>
         </AccordionContent>

@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div className="w-full border-t-2 bg-gray-100 border-gray-300">
+      <div className="w-full border-t-2 bg-white border-gray-300">
         <div className=" flex flex-grid justify-between p-10 sm:w-[60%] lg:w-[70%] gap-10 mx-auto">
           <div className="space-y-10 lg:space-y-10">
-            <h2>Let&apos;s talk</h2>
+            <h2>Let&apos;s talk:</h2>
             <div>
               <p>
                 <strong>Email:</strong>
@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="space-y-5">
-            <h2>Check us out</h2>
+            <h2>Check us out:</h2>
             <div className="lg:flex lg:flex-grid lg:gap-5 lg:space-y-0 space-y-5">
               <Image
                 className="lg:w-30 w-20"
