@@ -16,7 +16,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="p-6 border-b-2 bg-white border-gray-300">
+      <nav className="p-6 bg-white">
         <div className="flex justify-between max-w-7xl mx-auto ">
           <Link href="/" className="text-2xl lg:text-4xl text-gray-800">
             camelia
