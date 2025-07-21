@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div className="w-full border-t-2 bg-white border-gray-300">
+      <div className="w-full bg-white">
         <div className=" flex flex-grid justify-between p-10 sm:w-[60%] lg:w-[70%] gap-10 mx-auto">
           <div className="space-y-10 lg:space-y-10">
             <h2>Let&apos;s talk:</h2>

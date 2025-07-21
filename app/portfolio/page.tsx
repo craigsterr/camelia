@@ -26,7 +26,7 @@ export default function Portfolio() {
                 className={`${buttonStyle} ${
                   !buttonToggle
                     ? "bg-black text-white"
-                    : " bg-gray-200 hover:bg-gray-300"
+                    : " bg-gray-100 hover:bg-gray-200"
                 }`}
               >
                 Craig
@@ -36,7 +36,7 @@ export default function Portfolio() {
                 className={`${buttonStyle} ${
                   buttonToggle
                     ? "bg-black text-white"
-                    : " bg-gray-200 hover:bg-gray-300"
+                    : " bg-gray-100 hover:bg-gray-200"
                 }`}
               >
                 Leah
@@ -45,12 +45,12 @@ export default function Portfolio() {
           </div>
           {buttonToggle ? (
             <p>
-              I&apos;m Leah, a solution oriented UX/UI designer and college
-              student. A determined minimalist plagued with a maximalist mind
-              that swears by organization, thorough communication and an open
-              mind to be the recipe for leading the creation of beautiful,
-              human-centered designs. On the side I pursue other mediums of art
-              like graphic, fashion and illustrative design.{" "}
+              I'm Leah, a solution oriented UX/UI designer and college student.
+              A determined minimalist plagued with a maximalist mind that swears
+              by organization, thorough communication and an open mind to be the
+              recipe for leading the creation of beautiful, human-centered
+              designs. On the side I pursue other mediums of art like graphic,
+              fashion and illustrative design.{" "}
             </p>
           ) : (
             <p>

@@ -8,10 +8,10 @@ import { usePathname } from "next/navigation";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const linkStyle = ` text-xl lg:text-4xl font-medium px-2 py-1 rounded ${
+  const linkStyle = ` text-lg lg:text-4xl font-medium px-2 py-1 rounded ${
     pathname === "/contact"
       ? "bg-gray-300 text-black"
-      : "text-gray-800 bg-gray-300/0 hover:bg-gray-300 transition-all duration-300 hover:text-black"
+      : "text-gray-800 bg-gray-300/0 hover:bg-gray-100 transition-all duration-300 hover:text-black"
   }`;
 
   return (
@@ -42,7 +42,7 @@ export default function NavBar() {
               className={linkStyle}
               onClick={() => setIsOpen(false)}
             >
-              home
+              services
             </Link>
             <Link
               href="/portfolio"
@@ -51,13 +51,6 @@ export default function NavBar() {
             >
               portfolio
             </Link>
-            {/* <Link
-              href="/contact"
-              className={linkStyle}
-              onClick={() => setIsOpen(false)}
-            >
-              contact
-            </Link> */}
           </div>
         </div>
       </nav>

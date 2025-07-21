@@ -53,24 +53,40 @@
 @font-face {
   font-family: "Neue Haas Grotesk Display";
   src: url("/fonts/NeueHaasDisplayThin.ttf");
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/NeueHaasDisplayLight.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/NeueHaasDisplayThinItalic.ttf");
+  font-weight: 400;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Neue Haas Grotesk Display";
   src: url("/fonts/NeueHaasDisplayMediu.ttf");
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "Neue Haas Grotesk Display";
-  src: url("/fonts/NeueHaasDisplayXThinItalic.ttf");
+  src: url("/fonts/NeueHaasDisplayBold.ttf");
   font-weight: 900;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -84,20 +100,32 @@ html {
 
 @layer base {
   h1 {
-    @apply text-5xl lg:text-7xl font-bold;
+    @apply text-4xl sm:text-5xl; /* Was 5xl → 7xl */
   }
+
   h2 {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold;
+    @apply text-3xl sm:text-4xl font-bold; /* Was 2xl → 6xl */
   }
+
   h3 {
-    @apply text-2xl sm:text-3xl md:text-4xl lg:text-6xl;
+    @apply text-2xl sm:text-4xl font-black; /* Was 2xl → 6xl */
   }
+
   h4,
   a,
   p {
-    @apply text-xl sm:text-lg md:text-2xl tracking-wide;
+    @apply text-base sm:text-2xl font-medium leading-9; /* Was text-xl */
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
