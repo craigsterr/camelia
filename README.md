@@ -58,7 +58,7 @@ Camelia is co-founded and built by:
 
     Craig Ondevilla – Developer
 
-    Leah [Last Name] – UI/UX Design Lead
+    Leah Camacho – UI/UX Design Lead
 
 We're currently onboarding our first round of client projects. Stay tuned.
 📄 License
