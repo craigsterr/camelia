@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Camelia
 
-## Getting Started
+**Camelia** is a modern web development studio focused on building elegant, fast, and accessible websites for small businesses and local organizations. This repository contains the codebase for Camelia's official landing page and project scaffolding system.
 
-First, run the development server:
+## 🌐 Live Preview
+
+[Visit camelia.studio](https://camelia.work)
+
+## 🛠️ Built With
+
+- **Next.js** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Vercel** (deployment)
+- **Notion (CMS prototype)**
+
+## 🎨 Features
+
+- Responsive homepage with clean typography and smooth animations
+- Modular component system for rapid prototyping
+- Notion-based content management integration
+- Optimized for fast load times and mobile experience
+
+## 📁 Project Structure
+
+- `app/`: Route handlers and pages
+- `components/`: Custom UI components
+- `public/`: Static assets
+- `lib/`: Utility functions and CMS logic
+- `config/`: Centralized site and style configuration
+
+## 🚀 Getting Started
+
+Clone and run locally:
 
 ```bash
+git clone https://github.com/craigsterr/camelia.git
+cd camelia
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000 in your browser.
+🧪 Work In Progress
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This is an active project with ongoing development. Current areas of focus:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Notion-based content management for case studies and landing pages
 
-## Learn More
+    Component library finalization for client sites
 
-To learn more about Next.js, take a look at the following resources:
+    Theme switching and accessibility features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🤝 Collaboration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Camelia is co-founded and built by:
 
-## Deploy on Vercel
+    Craig Ondevilla – Developer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Leah [Last Name] – UI/UX Design Lead
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We're currently onboarding our first round of client projects. Stay tuned.
+📄 License
+
+MIT License
