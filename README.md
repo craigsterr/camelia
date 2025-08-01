@@ -41,6 +41,7 @@ npm install
 npm run dev
 
 Visit http://localhost:3000 in your browser.
+```
 🧪 Work In Progress
 
 This is an active project with ongoing development. Current areas of focus:
